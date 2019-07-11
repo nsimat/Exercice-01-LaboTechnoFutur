@@ -32,5 +32,48 @@ namespace Damier.Models
                 }
             }
         }
+
+        public virtual void Monte(string direction)
+        {
+            if (direction.Equals("gauche"))
+            {
+
+                if (X == 0)
+                {
+                    ++X;
+                    --Y;
+                }
+                else
+                {
+                    --X;
+                    --Y;
+                }
+            }
+            else
+            {
+                if (X == 9)
+                {
+                    ++X;
+                    --Y;
+                }
+                else
+                {
+                    --X;
+                    --Y;
+                }
+            }
+        }
+
+        public virtual void Descend(string direction)
+        {
+            if(direction.Equals("gauche"))
+            {
+                if(X == 9)
+                {
+                    --X;
+                    Y++;
+                }
+            }
+        }
     }
 }

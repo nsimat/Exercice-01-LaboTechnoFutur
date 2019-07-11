@@ -15,5 +15,10 @@ namespace Damier.Models
             get { return joueurs[index]; }
             set { joueurs[index] = value; }
         }
+
+        public void Deplacement()
+        {
+            
+        }
     }
 }

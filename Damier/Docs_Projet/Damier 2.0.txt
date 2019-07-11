@@ -1,0 +1,16 @@
+Convertir la structure "Pion" en class
+Celle-ci doit contenir les propriétés :
+"X","Y" et "Color"
+
+"X" et "Y" doivent contrôlé la valeur 
+(elle doit être limité de  0 à 9)
+Et pour "Y", la valeur doit aussi être contrôlé en "X" :
+si la valeur de "X" est Paire, la valeur "Y" doit être Paire
+
+
+BONUS :
+
+Je veux aussi une class "Jeu" qui aura comme propriété
+"Joueur1" et "Joueur2" de class "Joueur".
+Cette dernière aura pour propriété "Color"
+(que vous supprimé de votre "Pion") et un array de "Pion" de 20.

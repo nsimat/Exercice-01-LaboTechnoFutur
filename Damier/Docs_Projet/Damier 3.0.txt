@@ -1,0 +1,19 @@
+Ajouter un indexeur à notre class "Joueur"
+il vous permettra de sélectionner votre pion.
+
+Dans la class "Jeu" transformez "Joueur1" et "Joueur2"
+en une table de 2 "Joueur" doit être private.
+Ajoutez-y un indexeur.
+
+Créez un enfant à la class "Pion",
+cela sera la class "Dame" qui doit être scellée.
+
+Ajoutez une class static qui regroupera nos méthodes d'affichages.
+
+BONUS : 
+Ajoutez une méthode à notre "Pion" permettant
+les déplacements de celui-ci.
+(Attention, le joueur[0] descend en diagonal,
+et le joueur[1] monte en diagonal)
+Pour la class "Dame", la méthode doit être redéfinie
+(Une Dame peut monter et descendre)
