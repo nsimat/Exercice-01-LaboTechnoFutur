@@ -16,9 +16,16 @@ namespace Damier.Models
             set { joueurs[index] = value; }
         }
 
-        public void Deplacement()
+        public void Deplacer(Joueur joueur, string direction, int index)
         {
-            
-        }
+            if (joueur.Equals(this[0]))
+            {
+                joueur.Deplacer(joueur[index], "descendre", direction);
+            }
+            else
+            {
+                joueur.Deplacer(joueur[index], "monter", direction);
+            }
+        }        
     }
 }

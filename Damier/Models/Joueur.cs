@@ -22,5 +22,23 @@ namespace Damier.Models
                 Pions[index] = value;
             }
         }
+
+        public void Deplacer(string direction, int index)
+        {
+
+        }
+
+        public void Deplacer(Pion pion, string action, string direction)
+        {
+            if (action.Equals("descendre"))
+            {
+                pion.Descend(direction);
+            }
+
+            else
+            {
+                pion.Monte(direction);
+            }
+        }
     }
 }

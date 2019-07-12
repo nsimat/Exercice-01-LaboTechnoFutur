@@ -40,8 +40,8 @@ namespace Damier.Models
 
                 if (X == 0)
                 {
-                    ++X;
-                    --Y;
+                    Console.WriteLine("Impossible de déplacer vers la gauche!");
+                    return;
                 }
                 else
                 {
@@ -53,8 +53,8 @@ namespace Damier.Models
             {
                 if (X == 9)
                 {
-                    ++X;
-                    --Y;
+                    Console.WriteLine("Impossible de monter vers la droite!"); 
+                    return;
                 }
                 else
                 {
@@ -68,10 +68,28 @@ namespace Damier.Models
         {
             if(direction.Equals("gauche"))
             {
-                if(X == 9)
+                if(X == 0)
+                {
+                    Console.WriteLine("Impossible de descendre vers la gauche!");
+                    return;
+                }
+                else
                 {
                     --X;
-                    Y++;
+                    ++Y;
+                }
+            }
+            else
+            {
+                if(X == 9)
+                {
+                    Console.WriteLine("Impossible de descendre vers la droite!");
+                    return;
+                }
+                else
+                {
+                    ++X;
+                    ++Y;
                 }
             }
         }
